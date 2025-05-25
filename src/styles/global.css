@@ -1,0 +1,45 @@
+/* styles/global.css */
+body {
+  margin: 0;
+  background-color: #f5f7fa;
+  font-family: 'Inter', sans-serif;
+}
+
+
+@media (max-width: 768px) {
+  .app-container {
+    flex-direction: column;
+  }
+
+  aside {
+    width: 100% !important;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  main {
+    padding: 1rem !important;
+  }
+
+  .dashboard-flex {
+    flex-direction: column !important;
+  }
+}
+
+@media (max-width: 900px) {
+  .cardsWrapper, .cardsRow {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .card {
+    min-width: unset;
+    width: 100%;
+  }
+}

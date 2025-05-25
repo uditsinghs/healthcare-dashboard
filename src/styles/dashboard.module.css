@@ -1,0 +1,104 @@
+.heading {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.headingTop{
+position: relative;
+}
+.headingTop p{
+  position:absolute;
+  left: 40%;
+  bottom: 10%;
+  color: #B0B3E4;
+}
+.main {
+  width: 100%;
+  flex-grow: 1;
+  padding: 2rem;
+  background-color: #FFFF;
+}
+
+.dashboard-flex {
+  display: flex;
+  gap: 2rem;
+  margin-top: 2rem;
+
+
+}
+
+.anatomy-section {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.anatomy {
+  display: flex;
+
+}
+
+.activity-feed {
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+.anatomy-section {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.anatomy {
+  display: flex;
+}
+
+.calendar-section {
+  display: flex;
+  width: 50%;
+  gap: 1.5rem;
+}
+
+/* Responsive styles */
+@media (max-width: 1100px) {
+  .dashboard-flex {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .anatomy-section,
+  .calendar-section {
+    width: 100%;
+  }
+  .anatomy {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 700px) {
+  .main {
+    padding: 1rem;
+  }
+  .dashboard-flex {
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  .anatomy-section,
+  .calendar-section {
+    width: 100%;
+  }
+  .anatomy {
+    flex-direction: column;
+    align-items: center;
+  }
+  .headingTop p{
+  position:absolute;
+  left: 80%;
+  bottom: 12%;
+  color: #B0B3E4;
+}
+}

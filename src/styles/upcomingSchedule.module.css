@@ -1,0 +1,59 @@
+.container {
+  background-color: #fff;
+  padding: 1.5rem 1.5rem 1rem 1.5rem;
+  border-radius: 18px;
+  margin-top: 2rem;
+  box-shadow: 0 2px 16px 0 rgba(80, 112, 251, 0.08);
+}
+
+.day {
+  color: #7C7C97;
+  font-size: 1.08rem;
+  font-weight: 600;
+  margin: 1.2rem 0 0.7rem 0;
+}
+
+.cardsRow {
+  display: flex;
+  gap: 1.1rem;
+  margin-bottom: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: #DDE2F9;
+  border-radius: 14px;
+  min-width: 180px;
+  padding: 1rem 1.2rem;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.5rem;
+  box-shadow: 0 2px 8px 0 rgba(80, 112, 251, 0.04);
+}
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #22223b;
+}
+
+.icon {
+  font-size: 1.3rem;
+  margin-left: 0.5rem;
+}
+
+.time {
+  font-size: 0.98rem;
+  color: #7C7C97;
+  font-weight: 500;
+} 
+.heading{
+  color: #7C7C97;
+}

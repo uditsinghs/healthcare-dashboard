@@ -1,0 +1,121 @@
+.calender {
+  background:#F6FAFF;
+  border-radius: 18px;
+  padding: 2rem 2.5rem;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  box-shadow: 0 2px 16px 0 rgba(80, 112, 251, 0.08);
+  font-family: 'Inter', Arial, sans-serif;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.2rem;
+}
+
+.month {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #22223b;
+}
+
+.nav {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.arrow {
+  background: none;
+  border: none;
+  font-size: 1.4rem;
+  color: #4f46e5;
+  cursor: pointer;
+  padding: 0 0.5rem;
+  border-radius: 50%;
+  transition: background 0.2s;
+}
+.arrow:hover {
+  background: #e0e7ff;
+}
+
+.weekdays {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  margin-bottom: 0.5rem;
+  color: #bfc1d2;
+  font-size: 0.95rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+.weekday {
+  padding: 0.2rem 0;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 0.7rem;
+}
+
+.dayCell,
+.dayCellEmpty {
+  background: transparent;
+  min-height: 90px;
+  border-radius: 14px;
+  padding: 0.5rem 0.3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+}
+
+.dayCellEmpty {
+  pointer-events: none;
+}
+
+.dayNumber {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #3A36AC;
+  margin-bottom: 0.3rem;
+}
+
+.activeDay {
+  background:#EDF4FF;
+  box-shadow: 0 2px 8px 0 rgba(80, 112, 251, 0.08);
+}
+
+.times {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  align-items: center;
+}
+
+.timeSlot {
+  font-size: 0.85rem;
+  color: #18181a;
+  border-radius: 8px;
+  padding: 5px 10px;
+  margin-top: 0.1rem;
+  display: inline-block;
+  font-weight: 500;
+  transition: background 0.2s, color 0.2s;
+}
+
+.selectedTime {
+  background: #4f46e5;
+  color: #fff;
+}
+
+.noTime {
+  color: #bfc1d2;
+  font-size: 1.1rem;
+  margin-top: 0.5rem;
+}

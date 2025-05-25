@@ -1,0 +1,17 @@
+.app-container {
+  display: flex;
+  height: 100%;
+  font-family: 'Inter', sans-serif;
+}
+
+.wrapper {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width < 600) {
+  .app-container{
+    height: 20%;
+  }
+}

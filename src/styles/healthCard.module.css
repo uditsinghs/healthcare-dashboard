@@ -1,0 +1,79 @@
+.icon {
+  width: 35px;
+}
+.title {
+  margin-bottom: 0.7rem;
+  display: inline;
+  margin-left: 20px;
+}
+
+.healthCardContainer {
+  background-color: #F6FAFF;
+  padding: 2.5rem 2rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  width: 200px;
+}
+
+.healthCards {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.date {
+  font-size: 0.9rem;
+  color: #c4a0a0;
+  margin-top: 8px;
+}
+
+.status {
+  height: 6px;
+  width: 100%;
+  background-color: #eee;
+  border-radius: 5px;
+  margin-top: 8px;
+}
+
+
+@media (max-width: 600px) {
+  .healthCards {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: center;
+    align-items: stretch;
+  }
+  .healthCardContainer {
+    width: 140px;
+    padding: 1.2rem 0.7rem;
+  }
+  .icon {
+    width: 24px;
+  }
+  .title {
+    font-size: 0.95rem;
+    margin-left: 8px;
+  }
+}
+@media (max-width: 1100px) {
+  .healthCards {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: center;
+    align-items: stretch;
+  }
+  .healthCardContainer {
+    width: 140px;
+    padding: 1.2rem 0.7rem;
+  }
+  .icon {
+    width: 24px;
+  }
+  .title {
+    font-size: 0.95rem;
+    margin-left: 8px;
+  }
+}
